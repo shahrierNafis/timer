@@ -1,8 +1,46 @@
-# React + Vite
+# React Timer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple timer app built with React that allows users to set and manage timers. Whether you need a countdown for cooking, workout sessions, or any other timing needs, this app provides an easy-to-use interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Countdown Display: See the remaining time in hours, minutes, and seconds.
+- EndTime Display: See when the timer will go off.
+- Start, Pause, and Reset.
+- Responsive Design: The app works seamlessly on both desktop and mobile devices.
+
+## Getting Started
+
+### Prerequisites
+
+Node.js and npm (Node Package Manager) should be installed on your machine.
+
+### Installation
+
+Clone this repository to your local machine using:
+
+```
+git clone https://github.com/shahrierNafis/timer.git
+```
+
+Navigate to the project directory:
+
+```
+cd timer
+```
+
+#### Install the required dependencies:
+
+```
+npm install
+```
+
+### Usage
+
+#### Start the development server:
+
+```
+npm run dev
+```
+
+Open your web browser and navigate to http://localhost:5173 to access the timer app.
