@@ -43,12 +43,17 @@ function App() {
   }
   return (
     <>
-      <h1>{toHHMMSS(time).string}</h1>
-      <div>{toHHMMSS(endTime - 43200).string}</div>
+      <h1 id="Countdown">{toHHMMSS(time).string}</h1>
+      <div id="EndTime">{toHHMMSS(endTime - 43200).string}</div>
       <button onClick={() => setTimerOn(!timerOn)}>
         {timerOn ? "Stop" : "Start"}
       </button>
-      <input ref={resetTime} type="time" onChange={handleReset} />
+      <input
+        id="resetTime"
+        ref={resetTime}
+        type="time"
+        onChange={handleReset}
+      />
     </>
   );
 }
