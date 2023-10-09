@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <h1>{toHHMMSS(time).string}</h1>
-      <div>{toHHMMSS(endTime).string}</div>
+      <div>{toHHMMSS(endTime - 43200).string}</div>
       <button onClick={() => setTimerOn(!timerOn)}>
         {timerOn ? "Stop" : "Start"}
       </button>
@@ -66,9 +66,9 @@ function nowPlus(secs) {
 function toHHMMSS(secs) {
   // Convert secs to integer
   const sec_num = parseInt(secs, 10);
-
+  console.log(parseInt(secs, 10));
   // Calculate hours
-  const hours = Math.floor(sec_num / 3600) % 12;
+  const hours = Math.floor(sec_num / 3600) % 24;
 
   // Calculate minutes
   const minutes = Math.floor(sec_num / 60) % 60;
